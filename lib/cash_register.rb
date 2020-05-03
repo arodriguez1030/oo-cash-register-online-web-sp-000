@@ -10,9 +10,9 @@ end
    def add_item(title, price, quantity = 1)
      @price = price
     if quantity > 1
-      self.total += @price * quantity
+      self.total += price * quantity
     else
-      self.total += @price
+      self.total += price
     end
     quantity.times {@items << title}
    end
