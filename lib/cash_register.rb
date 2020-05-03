@@ -10,11 +10,10 @@ end
    def add_item(title, price, quantity = 1)
     if quantity > 1
       self.total += price * quantity
-      @items << title
     else
       self.total += price
-      @items << title
     end
+    quantity.times {@items << title}
    end
    
    def apply_discount
