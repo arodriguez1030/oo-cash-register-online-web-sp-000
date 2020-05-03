@@ -15,6 +15,7 @@ end
       self.total += @price
     end
     quantity.times {@items << title}
+    last_transaction
    end
    
    def apply_discount
@@ -27,7 +28,7 @@ end
    end
    end
    def void_last_transaction
-     self.total -= self.price.last
+     self.total -= self.price.
  end
    
 end
