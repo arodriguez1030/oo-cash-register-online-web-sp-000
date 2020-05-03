@@ -27,7 +27,7 @@ end
    end
    end
    def void_last_transaction
-     self.total -= self.price
+     self.total -= self.price.last
  end
    
 end
